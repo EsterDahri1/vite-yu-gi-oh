@@ -1,6 +1,11 @@
 <script>
+import AppSelect from './AppSelect.vue';
 export default {
     name: 'AppMain',
+
+    components: {
+        AppSelect
+    }
 
 }
 </script>
@@ -8,15 +13,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <div class="py-4">
-                <select name="archetype" id="archetype" class="form-select">
-                    <option value="1" selected>Alien</option>
-                    <option value="2">Noble Knight</option>
-                    <option value="3">Taintet Treasure</option>
-                    <option value="4">Melodious</option>
-                    <option value="5">Archfiend</option>
-                </select>
-            </div>
+            <AppSelect />
 
             <div class="container bg-white">
                 <div class="p-5 row ">
@@ -57,8 +54,5 @@ export default {
 main {
     background-color: $ygoWarning;
 
-    #archetype {
-        width: 160px;
-    }
 }
 </style>
