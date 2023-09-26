@@ -1,7 +1,18 @@
-<script setup>
+<script>
+import AppHeader from "./components/AppHeader.vue";
+export default {
+  data() {
 
+  },
+
+  components: {
+    AppHeader
+  }
+}
 </script>
 
-<template></template>
+<template>
+  <AppHeader />
+</template>
 
 <style scoped></style>
