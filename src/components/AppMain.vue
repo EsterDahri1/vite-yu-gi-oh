@@ -17,6 +17,9 @@ export default {
 
             <div class="container bg-white">
                 <div class="p-5 row ">
+                    <div class="bg-black text-white text-capitalize">
+                        found 39 cards
+                    </div>
                     <div class="col-2">
                         <div class="card">
                             ciao come va

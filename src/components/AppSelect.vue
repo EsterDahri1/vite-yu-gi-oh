@@ -1,12 +1,6 @@
 <script>
 export default {
     name: 'AppSelect',
-
-    data() {
-
-    },
-
-
 }
 </script>
 
