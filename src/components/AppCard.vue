@@ -2,6 +2,9 @@
 import { state } from "../state.js";
 export default {
     name: 'AppCard',
+    props: {
+        card: Object
+    },
     data() {
         return {
             state

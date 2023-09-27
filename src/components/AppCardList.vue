@@ -25,11 +25,11 @@ export default {
         <div class="cardsFound">
             Found {{ state.cards.length }} cards
         </div>
-        <div class="row row-cols-2 g-3" v-if="state.cards">
-            <AppCard />
-        </div>
-        <div v-else>
-            <AppLoader />
+
+        <AppLoader v-if="!state.status" />
+
+        <div class="row row-cols-2 g-3" v-else>
+            <AppCard :card="card" v-for="card in state.cards" />
         </div>
     </div>
 </template>
