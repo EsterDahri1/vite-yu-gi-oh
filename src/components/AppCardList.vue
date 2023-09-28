@@ -1,7 +1,8 @@
 <script>
 import { state } from '../state.js';
 import AppCard from './AppCard.vue';
-import AppLoader from './AppLoader.vue'
+import AppLoader from './AppLoader.vue';
+import AppCounter from './AppCounter.vue';
 export default {
     name: 'AppCardList',
 
@@ -15,16 +16,15 @@ export default {
     },
     components: {
         AppCard,
-        AppLoader
+        AppLoader,
+        AppCounter
     }
 }
 </script>
 
 <template>
     <div class="p-5 row">
-        <div class="cardsFound">
-            Found {{ state.cards.length }} cards
-        </div>
+        <AppCounter />
 
         <AppLoader v-if="!state.status" />
 
